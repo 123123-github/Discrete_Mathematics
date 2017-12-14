@@ -14,16 +14,16 @@ s2=imfilter(man,h2);
 h3=fspecial('laplacian',0);
 s3=imfilter(man,h3);
 %显示运算前后的图像
-figure(1);
+subplot(2,4,1);
 imshow(s1);
 title('水平sobel算子');
-figure(2);
+subplot(2,4,2);
 imshow(s2);
 title('垂直sobel算子');
-figure(3);
+subplot(2,4,3);
 imshow(s3);
 title('laplacian算子');
-figure(4);
+subplot(2,4,4);
 imshow(man);
 title('运算前图像');
 
@@ -38,12 +38,12 @@ s5=imfilter(man,m2);
 m3=[0 -1 0;-1 4 -1;0 -1 0];
 s6=imfilter(man,m3);
 %显示运算前后的图像
-figure(5);
+subplot(2,4,5);
 imshow(s4);
 title('水平sobel算子\_直接输入');
-figure(6);
+subplot(2,4,6);
 imshow(s5);
 title('垂直sobel算子\_直接输入');
-figure(7);
+subplot(2,4,7);
 imshow(s6);
 title('laplacian算子\_直接输入');
