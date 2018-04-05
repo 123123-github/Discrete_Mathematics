@@ -405,6 +405,11 @@ void getImage(const char* fileName)
 	int p1, p2, p3, p4;
 	FILE* img;
 	fopen_s(&img, fileName, "r");
+	if (img == NULL)
+	{
+		printf_s("未能找到%s\n请确保图像信息 txt 文件与 exe 在同一目录下\n");
+		return;
+	}
 	for (int i = checkImageHeight - 1; i >= 0; --i)
 		for (int j = 0;j < chaeckImageWidth; ++j)
 		{

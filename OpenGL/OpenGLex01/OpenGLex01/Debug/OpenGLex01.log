@@ -1,0 +1,14 @@
+﻿  main.cpp
+d:\code_github\fuzzy\opengl\openglex01\openglex01\main.cpp(64): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+d:\code_github\fuzzy\opengl\openglex01\openglex01\main.cpp(65): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+d:\code_github\fuzzy\opengl\openglex01\openglex01\main.cpp(72): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+d:\code_github\fuzzy\opengl\openglex01\openglex01\main.cpp(96): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+d:\code_github\fuzzy\opengl\openglex01\openglex01\main.cpp(104): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+d:\code_github\fuzzy\opengl\openglex01\openglex01\main.cpp(105): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+d:\code_github\fuzzy\opengl\openglex01\openglex01\main.cpp(106): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+d:\code_github\fuzzy\opengl\openglex01\openglex01\main.cpp(107): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+d:\code_github\fuzzy\opengl\openglex01\openglex01\main.cpp(109): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+d:\code_github\fuzzy\opengl\openglex01\openglex01\main.cpp(410): warning C4473: “printf_s”: 没有为格式字符串传递足够的参数
+  d:\code_github\fuzzy\opengl\openglex01\openglex01\main.cpp(410): note: 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+  d:\code_github\fuzzy\opengl\openglex01\openglex01\main.cpp(410): note: 缺失的可变参数 1 为格式字符串“%s”所需
+  OpenGLex01.vcxproj -> D:\Code_github\Fuzzy\OpenGL\OpenGLex01\Debug\OpenGLex01.exe
