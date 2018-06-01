@@ -1,0 +1,12 @@
+pc
+
+im : instruction memory
+
+regfile : registers
+
+mux :
+
+alu :
+
+dm : data memory
+
