@@ -1,4 +1,4 @@
-module regs( clk, we, rs, rt, rw, din, a, b);
+module regfile( clk, we, rs, rt, rw, din, a, b);
     input           clk;                // clock
     input           we;                 // write enable
     input[4:0]      rs, rt;             // read from:   rs, rt
@@ -7,20 +7,20 @@ module regs( clk, we, rs, rt, rw, din, a, b);
 
     output[31:0]    a,b;                // [rs] --> a;  [rt] --> b
 
-    reg[31:0]       regf[31:0];         // 32 MIPS general-purpose register
+    reg[31:0]       regs[31:0];         // 32 MIPS general-purpose registers
 
     initial
     begin
-        regf[0] = 32'b0;                // $zero
-        regf[28] = 32'h1000_8000;       // $gp
+        regs[0] = 32'b0;                // $zero
+        //regs[28] = 32'h1000_8000;       // $gp
     end
 
-    assign a = regf[rs];
-    assign b = regf[rt];
+    assign a = regs[rs];
+    assign b = regs[rt];
 
     always @(posedge clk)
-        if (we && (!rw))                // avoid modifying the value of $zero
-            regf[rw] <= din;
+        if (we && rw)                   // avoid modifying the value of $zero  !!! (rw) means rw is not zero
+            regs[rw] <= din;
 
 
 endmodule

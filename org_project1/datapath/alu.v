@@ -9,18 +9,19 @@ module alu( op, A, B, y, zero);
     parameter
     AND = 4'b0000,
     OR  = 4'b0001,
-    add = 4'b0010,
-    sub = 4'b0110,
-    slt = 4'b0111;
+    ADD = 4'b0010,
+    SUB = 4'b0110,
+    SLT = 4'b0111;
 
-    always @(op or A or B)
+    //always @(op or A or B)
+    always @(*)
     begin
         case (op)
             AND:  y = A & B;
             OR:   y = A | B;
-            add:  y = A + B;
-            sub:  y = A - B;
-            slt:  y = (A < B)? 32'b1: 32'b0;
+            ADD:  y = A + B;
+            SUB:  y = A - B;
+            SLT:  y = (A < B)? 32'b1: 32'b0;
             default:  y = 32'b?;            // undefine
         endcase
     end
@@ -33,8 +34,8 @@ endmodule
 
     AND     0000
     OR      0001
-    add     0010
-    sub     0110
-    slt     0111
+    ADD     0010
+    SUB     0110
+    SLT     0111
 
 */

@@ -22,7 +22,7 @@ module t_regs();
         #30 rw = 5'd17;         // $17 <- 25
         #30 din = 32'd25;
         
-        #100 rw = 5'd18
+        #100 rw = 5'd18;
         #100 din = 32'd666;     // 100`time write
         
         

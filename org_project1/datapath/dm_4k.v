@@ -11,14 +11,27 @@ module dm_4k( addr, din, we, clk, dout);
     assign dout = dm[ addr[11:2]];
     
     always @(posedge clk)
+    begin
         if (we)
             dm[ addr[11:2]] <= din;
+    end
+
+
+
+    // initial by 1-10
+    initial
+    begin
+        //$readmemh("D:\\Exp\\Project1\\code.txt", im);
+        $readmemh("D:\\Exp\\Project1\\dm.txt", dm);
+    end
+
+    
 
 
 endmodule
 
 
 /*
-    dout is the corresponding addr data (last posedge)
+    dout is the corresponding addr data (last clock posedge)
     
 */

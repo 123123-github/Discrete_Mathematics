@@ -19,5 +19,5 @@ endmodule
 
 /*
     instruction.dat is used to init the instruction memory
-    1024=2^10, so 3 bit hex addresses is enough(in *.dat file)
+    1024=2^10, so 3-bit hex addresses is enough(in *.txt file)
 */
